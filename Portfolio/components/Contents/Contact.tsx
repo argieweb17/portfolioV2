@@ -26,7 +26,7 @@ const Contact = () => {
           className="px-10 pt-10 z-10"
         >
           <Image
-            src="/Me.png"
+            src="/Me1.png"
             alt="contact"
             width={500}
             height={500}
@@ -54,6 +54,7 @@ const Contact = () => {
                   alt={social.name}
                   width={30}
                   height={30}
+                  className="h-[30px] w-[30px]"
                 />
               </motion.div>
             </Link>
@@ -65,7 +66,7 @@ const Contact = () => {
             className=" z-10"
           >
             <Link
-              href="mailto:puturivana.d@gmail.com"
+              href="mailto:apagbunocan@gmail.com"
               className="flex gap-2 items-center justify-center"
             >
               <p>Mail Me!</p>

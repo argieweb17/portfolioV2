@@ -30,8 +30,8 @@ const About = () => {
           className="order-2 md:order-1"
         >
           <div className="font-bold text-white flex flex-col justify-center items-center text-4xl md:text-5xl  lg:text-6xl ">
-            <span className="text-[#2196f3]">Hello, i&apos;am</span>
-            <h1 className="text-center">Putu Rivan Anggana</h1>
+            <span className="text-[#2196f3]">Hello, I&apos;m</span>
+            <h1 className="text-center">Argie Pair Pagbunocan</h1>
           </div>
           <p className="text-gray-400 my-5 max-w-[600px] text-justify mx-10 text-md md:text-xl">
             Tech enthusiast who enjoys turning ideas into real projects. I work mostly with TypeScript to build responsive and user-friendly applications.
@@ -66,7 +66,7 @@ const About = () => {
           className="md:order-2 order-1 z-20 items-center justify-center"
         >
           <Image
-            src="/Me.png"
+            src="/Me1.png"
             alt="profile"
             width={500}
             height={500}

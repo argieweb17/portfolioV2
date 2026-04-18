@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,6 +15,8 @@ interface Props {
 }
 
 const CardProject = ({ Img, Title, Description, ProjectLink, id, delay }: Props) => {
+  const [imageFailed, setImageFailed] = useState(!Img);
+
   // Handle kasus ketika ProjectLink kosong
   const handleLiveDemo = (e: any) => {
     if (!ProjectLink) {
@@ -36,23 +39,26 @@ const CardProject = ({ Img, Title, Description, ProjectLink, id, delay }: Props)
     initial={"hidden"}
     whileInView={"visible"}
       variants={slideInFromLeft(delay)}
-      className="group relative w-full z-20"
+      className="group relative z-20 h-full w-full"
     >
-      <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-300 hover:shadow-blue-500/20">
+      <div className="relative flex h-full flex-col overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-lg shadow-2xl transition-all duration-300 hover:shadow-blue-500/20">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-cyan-500/10 to-sky-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
 
-        <div className="relative p-5 z-10">
-          <div className="relative overflow-hidden rounded-lg">
-            <Image
-              src={Img}
-              alt={Title}
-              width={400}
-              height={200}
-              className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-            />
-          </div>
+        <div className="relative z-10 flex h-full flex-col p-5">
+          {!imageFailed && (
+            <div className="relative aspect-[16/10] overflow-hidden rounded-lg">
+              <Image
+                src={Img}
+                alt={Title}
+                width={400}
+                height={200}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onError={() => setImageFailed(true)}
+              />
+            </div>
+          )}
 
-          <div className="mt-4 space-y-3">
+          <div className={`${imageFailed ? "" : "mt-4"} flex flex-1 flex-col space-y-3`}>
             <h3 className="text-xl font-semibold bg-gradient-to-r from-blue-200 via-cyan-200 to-sky-200 bg-clip-text text-white">
               {Title}
             </h3>
@@ -61,7 +67,7 @@ const CardProject = ({ Img, Title, Description, ProjectLink, id, delay }: Props)
               {Description}
             </p>
 
-            <div className="pt-4 flex items-center justify-between">
+            <div className="flex items-center justify-between pt-4 mt-auto">
               {ProjectLink ? (
                 <a
                   href={ProjectLink || "#"}

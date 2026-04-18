@@ -13,6 +13,8 @@ import { LucideBlocks } from "lucide-react";
 import { Certificates } from "@/data/Certificates";
 
 const Portofolio = () => {
+  const visibleProjectItems = Project.filter((project) => Boolean(project.img));
+
   // State to control the number of items displayed
   const [visibleProjects, setVisibleProjects] = useState(6);
   const [visibleCertificates, setVisibleCertificates] = useState(6);
@@ -20,7 +22,7 @@ const Portofolio = () => {
 
   // Function to toggle the number of visible items
   const toggleVisibleProjects = () =>
-    setVisibleProjects((prev) => (prev === 6 ? Project.length : 6));
+    setVisibleProjects((prev) => (prev === 6 ? visibleProjectItems.length : 6));
   const toggleVisibleCertificates = () =>
     setVisibleCertificates((prev) => (prev === 6 ? Certificates.length : 6));
   const toggleVisibleStack = () =>
@@ -61,7 +63,7 @@ const Portofolio = () => {
         {/* Projects */}
         <TabsContent value="Projects">
           <div className="grid md:grid-cols-3 grid-cols-1 gap-5 mx-10">
-            {Project.slice(0, visibleProjects).map((project, index) => (
+            {visibleProjectItems.slice(0, visibleProjects).map((project, index) => (
               <CardProject
                 key={project.id}
                 id={project.id}
@@ -73,7 +75,7 @@ const Portofolio = () => {
               />
             ))}
           </div>
-          {Project.length > 6 && (
+          {visibleProjectItems.length > 6 && (
             <Button
               variant={"outline"}
               className="mx-10 mt-5 z-20"

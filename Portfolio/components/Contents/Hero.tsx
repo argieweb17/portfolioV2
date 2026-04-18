@@ -44,8 +44,10 @@ const Hero = () => {
       {/* Description */}
       <motion.div variants={slideInFromLeft(0.8)}>
         <p className="text-lg text-gray-400 my-5 max-w-[600px] text-center mx-2 md:mx-0">
-          I&apos;m a dedicated student with a passion for technological
-          advancements and fitness. Discover my journey and projects
+          I design and build responsive web experiences with a focus on clean
+          interfaces, thoughtful interactions, and practical solutions. Explore
+          my work, skills, and the projects that shape my journey as a
+          developer.
         </p>
       </motion.div>
       {/* Social */}
@@ -63,6 +65,7 @@ const Hero = () => {
                 alt={social.name}
                 width={35}
                 height={35}
+                className="h-[35px] w-[35px]"
               />
             </motion.div>
           </Link>
