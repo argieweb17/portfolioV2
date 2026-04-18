@@ -39,7 +39,7 @@ const About = () => {
           </p>
           <div className="flex flex-row gap-5 justify-center">
             <a
-              href="https://drive.google.com/uc?export=download&id=11lTqzZGPg-BY9yZvajp6Dcs8XO3lNal4"
+              href="https://drive.google.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row gap-2"
