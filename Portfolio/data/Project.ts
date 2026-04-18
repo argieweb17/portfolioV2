@@ -24,7 +24,7 @@ export const Project = [
     link: "https://waterbillingmanagementsystem.vercel.app/",
     img: "/Project/prod2.png",
     description:
-      "WaterBillingManagementSystem is a project developed to provide users with an organized and interactive platform for managing water billing operations. Built using modern web technologies, this project allows users to search for billing information, view detailed records, and easily navigate through different categories. It leverages the Jikan API to fetch real-time data, ensuring that users always have access to up-to-date billing details. WaterBillingManagementSystem was created to enhance the user experience with a clean, responsive design, and it serves as both a practical project for learning and a tool for water utility managers.",
+      "WaterBillingManagementSystem is a project designed to streamline the management of water billing operations. It provides a user-friendly interface for users to search and view billing information, integrating real-time data for accurate billing details. The system is built with a responsive design, ensuring seamless access across various devices. This project serves as a practical solution for managing water billing efficiently while enhancing the user experience. Key features include a comprehensive search functionality, detailed billing records, and an intuitive interface for both users and administrators.  ",
     role: "Frontend & Backend Developer",
     stack: [7, 4, 5, 20],
     github: "https://github.com/PutuRivan/WaterBillingManagementSystem",
