@@ -15,6 +15,8 @@ import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "@/utils";
 
 const About = () => {
+  const visibleProjects = Project.filter((project) => Boolean(project.img));
+
   return (
     <section id="about" className="lg:mx-20">
       <Header
@@ -78,7 +80,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row md:gap-20 gap-5 my-10 items-center justify-center">
         <CardAbout
           title="Total Project"
-          total={Project.length}
+          total={visibleProjects.length}
           description="Innovative web Solutions crafted"
           icons={FaCode}
           delay={0.5}
