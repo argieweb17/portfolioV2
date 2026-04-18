@@ -23,6 +23,8 @@ const CardStack = ({ TechStackIcon, Language, delay }: Props) => {
           alt={`${Language} icon`}
           width={64}
           height={64}
+          loading="eager"
+          unoptimized
           className="relative h-16 w-16 md:h-20 md:w-20 transform transition-transform duration-300"
         />
       </div>

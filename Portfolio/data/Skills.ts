@@ -49,6 +49,20 @@ export const Skill_data = [
     height: 80,
   },
   {
+    id: 21,
+    skill_name: "Laravel",
+    Image: "/Skill/laravel.svg",
+    width: 80,
+    height: 80,
+  },
+  {
+    id: 22,
+    skill_name: "Symfony",
+    Image: "/Skill/symfony.svg",
+    width: 80,
+    height: 80,
+  },
+  {
     id: 8,
     skill_name: "Framer Motion",
     Image: "/Skill/framer.png",
@@ -140,3 +154,4 @@ export const Skill_data = [
     height:80
   }
 ];
+

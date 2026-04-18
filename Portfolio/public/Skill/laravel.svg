@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="laravelTitle">
+  <title id="laravelTitle">Laravel</title>
+  <rect width="128" height="128" rx="24" fill="#FFF2EE"/>
+  <path d="M30 42.5 49.5 31l17.5 10.5-19.5 11.4z" fill="#FF2D20"/>
+  <path d="M67 41.5 84.9 31 103 41.6 85.1 52.1z" fill="#FF2D20" opacity=".92"/>
+  <path d="M49.4 54.4 67 44.1v21.2L49.4 75.6z" fill="#FF2D20"/>
+  <path d="M67 65.3 85.1 54.8v21.1L67 86.4z" fill="#FF2D20" opacity=".92"/>
+  <path d="M30 42.5v21.1l19.4 12V54z" fill="#FF6B61"/>
+  <path d="M85.1 52.1v23.8L67 86.4V65.3z" fill="#FF6B61"/>
+  <path d="M40 99h48" stroke="#FF2D20" stroke-width="8" stroke-linecap="round" opacity=".18"/>
+</svg>

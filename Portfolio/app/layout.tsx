@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/Me.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/Me1.png" type="image/png" sizes="32x32" />
       </head>
       <body className={`${inter.className} text-blue-100 bg-[#070c22]`}>
         <StarsCanvas />
