@@ -1,10 +1,13 @@
 {
   "name": "repo2-workspace",
   "private": true,
+  "workspaces": [
+    "Portfolio"
+  ],
   "scripts": {
-    "dev": "npm --prefix Portfolio run dev",
-    "build": "npm --prefix Portfolio run build",
-    "start": "npm --prefix Portfolio run start",
-    "lint": "npm --prefix Portfolio run lint"
+    "dev": "npm run dev --workspace Portfolio",
+    "build": "npm run build --workspace Portfolio",
+    "start": "npm run start --workspace Portfolio",
+    "lint": "npm run lint --workspace Portfolio"
   }
 }
